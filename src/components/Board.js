@@ -41,9 +41,9 @@ const Board = () => {
     return (
         <div>
             <div>Board</div>
-            <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', paddingLeft: '200px', paddingRight: '200px', paddingTop: '50px'}}>
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', width: '300px', margin: 'auto'}}>
                 {square.map((box,index)=>{
-                    return <button style={{height: '100px'}} className={index} onClick={()=>clickBox(index)}>{box}</button>
+                    return <button style={{height: '100px', width: '100px', fontSize: '24px'}} className={index} onClick={()=>clickBox(index)}>{box}</button>
                 })}
             </div>
         </div>
